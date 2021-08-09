@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import "reset";
+@import "grid";
+
+
+
+body {
+  font-size: 16px;
+
+}
+
+.NavBar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: black;
+  font-size: 36px;
+  color: white;
+
+  }
+
+.HomePage {
+ display: flex;
+ text-align: center;
+
+
+  }
+
+.AboutPage {
+
+}
+
+.ContactPage{
+
+}
+
+.AppPage {
+
+}
+.ShowPage{
+  button {
+    width: 200px;
+    background-color: grey;
+    box-shadow: 8px 8px 16px rgba(255, 125, 88, 0.2);
+  }
+  form {
+    input[type="submit"] {
+      width: 400px;
+      background-color: pink;
+      box-shadow: 8px 8px 16px rgba(255, 125, 88, 0.2);
+    }
+  }
+}
