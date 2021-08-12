@@ -11,4 +11,4 @@ const bookmarkSchema = new Schema({
 })
 
 
-module.exports = model('Blog', bookmarkSchema )
+module.exports = model('Bookmark', bookmarkSchema )

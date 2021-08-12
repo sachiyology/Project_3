@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Home(props) {
 	const [bookmarks, setBookmarks] = useState([]); // <==== Bookmarks State
+	const src = `https://www.google.com/s2/favicons?domain=`;
 
 	useEffect(() => {
 		(async () => {
@@ -25,7 +26,13 @@ export default function Home(props) {
 							<Link to={`/${bookmark._id}`}>
 								<h3>{bookmark.title}</h3>
 							</Link>
-							<p>{bookmark.url}</p>
+							<p>
+								<img
+									src={`https://www.google.com/s2/favicons?domain=${bookmark.url}`}
+									alt="icon"
+								/>
+								{bookmark.url}
+							</p>
 						</li>
 					);
 				})}
