@@ -37,7 +37,6 @@ const router = require('express').Router();
     }
   })
 
-// Update
   /* Update */
   router.put('/:id', async (req, res) => {
     try {

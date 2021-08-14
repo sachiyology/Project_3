@@ -12,7 +12,7 @@ const routes = [
 	}, */
 	{
 		Component: Home,
-		key: 'Home',
+		key: 'Bookmarks',
 		path: '/home'
 	},
 	{

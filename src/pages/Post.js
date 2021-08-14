@@ -13,7 +13,7 @@ export default function Show(props) {
 				headers: {
 					'Content-Type': 'application/json'
 				},
-				url: JSON.stringify({
+				body: JSON.stringify({
 					title: titleInput.current.value,
 					url: urlInput.current.value
 				})

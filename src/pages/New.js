@@ -106,7 +106,7 @@ export default function App(props) {
 				{bookmarks.map(bookmark => {
 					return (
 						<li key={bookmark._id}>
-							The bookmark you added is {bookmark.title} => {bookmark.url}
+							{bookmark.title} => {bookmark.url}
 						</li>
 					);
 				})}

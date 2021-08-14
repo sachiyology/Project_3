@@ -8,6 +8,8 @@
 
 }
 
+
+
 body {
   font-size: 16px;
   background-color: black;
@@ -21,6 +23,9 @@ body {
   background-color: black;
   font-size: 28px;
   box-shadow: 0 0 10px 0 #90bde2;
+  font-weight:800;
+
+
   a {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -28,20 +33,16 @@ body {
     margin-left: 20px;
     font-size:1em;
     text-align:center;
-  line-height:0.95em;
-  font-weight:bold;
-  color: transparent;
-  background: linear-gradient(0deg, #B67B03 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #B67B03 90% 100%);
-  -webkit-background-clip: text;
-  }
+    color: red;
+
+}
   }
 
 .HomePage {
  display: flex;
- font-size:1em;
+ font-size:15px;
  margin-left: 20px;
  margin-top: 5px;
-
  li{
    background-color: black;
  }
@@ -49,12 +50,12 @@ body {
 h3 {
   color: grey;
   margin-top: 20px;
-  font-family: "myfont" !important;
+  font-weight:800;
 
 }
   img {
   width: 25px;
-  height: 21px;
+  height: 25px;
   }
 }
 
@@ -75,11 +76,12 @@ div {
 }
 
 .NewPage {
-  font-size:28px;
+  font-size:24px;
   margin-left: 20px;
   margin-top: 5px;
   margin-right: 20px;
-  color: gold;
+  color: grey;
+
 
   li{
     font-size: 8px;
@@ -106,7 +108,7 @@ div.ShowPage {
     }
   }
     a {
-      color: gold;
+      color: red;
     }
 
 
