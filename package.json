@@ -1,5 +1,5 @@
 {
-  "engine": {
+  "engines": {
     "node": "14.17.0"
   },
   "name": "big-poppa-code-react-starter-kit",
