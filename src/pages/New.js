@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 export default function App(props) {
 	const [bookmarks, setBookmarks] = useState([]);
 	const [singleBookmark, setBookmark] = useState({
-		name: '',
-		role: ''
+		titleInput: '',
+		url: ''
 	});
 	useEffect(() => {
 		(async () => {
@@ -59,28 +59,54 @@ export default function App(props) {
 		setBookmark({ ...singleBookmark, [e.target.id]: e.target.value });
 	};
 	return (
-		<div className="AppPage">
-			This is the {props.page} page
+		<div className="NewPage">
+			New bookmark
 			<form onSubmit={handleSubmit}>
+				<div className="input-group mb-3">
+					<div className="input-group-prepend">
+						<span className="input-group-text" id="inputGroup-sizing-default">
+							Title
+						</span>
+					</div>
+					<input
+						type="text"
+						id="title"
+						value={singleBookmark.title}
+						onChange={handleChange}
+						className="form-control"
+						aria-label="Default"
+						aria-describedby="inputGroup-sizing-default"
+					/>
+				</div>
+
+				<div className="input-group mb-3">
+					<div className="input-group-prepend">
+						<span className="input-group-text" id="inputGroup-sizing-default">
+							URL
+						</span>
+					</div>
+					<input
+						type="text"
+						id="url"
+						value={singleBookmark.url}
+						onChange={handleChange}
+						className="form-control"
+						aria-label="Default"
+						aria-describedby="inputGroup-sizing-default"
+					/>
+				</div>
+				<br />
 				<input
-					type="text"
-					id="name"
-					value={singleBookmark.title}
-					onChange={handleChange}
+					type="submit"
+					value="Add"
+					className="btn btn-secondary btn-lg btn-block"
 				/>
-				<input
-					type="text"
-					id="role"
-					value={singleBookmark.url}
-					onChange={handleChange}
-				/>
-				<input type="submit" value="Submit" />
 			</form>
 			<ul>
 				{bookmarks.map(bookmark => {
 					return (
 						<li key={bookmark._id}>
-							The bookmark is named {bookmark.title} and its role is {bookmark.url}
+							The bookmark you added is {bookmark.title} => {bookmark.url}
 						</li>
 					);
 				})}

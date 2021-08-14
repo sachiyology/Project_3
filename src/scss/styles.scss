@@ -4,53 +4,110 @@
 
 @font-face{
   font-family: "myfont";
-  src: url("../public/font/Super-Mario-Bros--3.ttf");
+  src: url("../public/font/BungeeShade-Regular.ttf") !important;
+
 }
 
 body {
   font-size: 16px;
+  background-color: black;
 
 }
 
 .NavBar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   background-color: black;
-  font-size: 36px;
-  color: white;
-  font-family: 'myfont';
+  font-size: 28px;
+  box-shadow: 0 0 10px 0 #90bde2;
+  a {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size:1em;
+    text-align:center;
+  line-height:0.95em;
+  font-weight:bold;
+  color: transparent;
+  background: linear-gradient(0deg, #B67B03 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #B67B03 90% 100%);
+  -webkit-background-clip: text;
+  }
   }
 
 .HomePage {
  display: flex;
- text-align: center;
+ font-size:1em;
+ margin-left: 20px;
+ margin-top: 5px;
 
+ li{
+   background-color: black;
+ }
 
+h3 {
+  color: grey;
+  margin-top: 20px;
+  font-family: "myfont" !important;
+
+}
+  img {
+  width: 25px;
+  height: 21px;
   }
+}
+
+
+html {
+  background-color: black;
+}
+div {
+  background-color: black;
+}
 
 .AboutPage {
-
+  background-color: black;
 }
 
 .ContactPage{
 
 }
 
-.AppPage {
+.NewPage {
+  font-size:28px;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-right: 20px;
+  color: gold;
 
+  li{
+    font-size: 8px;
+    color: grey;
+  }
+}
+div.ShowPage {
+  background-color: black;
 }
 .ShowPage{
+  margin-top: 20px;
+  margin-left: 70px;
+  background-color: black;
+  color: grey;
   button {
-    width: 200px;
-    background-color: grey;
+    width: 100px;
     box-shadow: 8px 8px 16px rgba(255, 125, 88, 0.2);
   }
   form {
     input[type="submit"] {
-      width: 400px;
-      background-color: pink;
+      width: 100px;
       box-shadow: 8px 8px 16px rgba(255, 125, 88, 0.2);
+
     }
   }
+    a {
+      color: gold;
+    }
+
+
 }

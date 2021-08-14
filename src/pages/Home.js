@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Home(props) {
 	const [bookmarks, setBookmarks] = useState([]); // <==== Bookmarks State
-	const src = `https://www.google.com/s2/favicons?domain=`;
+	// const src = `https://www.google.com/s2/favicons?domain=`;
 
 	useEffect(() => {
 		(async () => {
@@ -19,20 +19,20 @@ export default function Home(props) {
 
 	return (
 		<div className="HomePage">
-			<ul>
+			<ul className="list-group list-group-flush">
 				{bookmarks.map(bookmark => {
 					return (
-						<li key={bookmark._id}>
+						<li key={bookmark._id} className="list-group-item">
 							<Link to={`/${bookmark._id}`}>
-								<h3>{bookmark.title}</h3>
+								<h3 className="container">{bookmark.title}</h3>
 							</Link>
-							<p>
-								<img
-									src={`https://www.google.com/s2/favicons?domain=${bookmark.url}`}
-									alt="icon"
-								/>
-								{bookmark.url}
-							</p>
+
+							<img
+								src={`https://www.google.com/s2/favicons?domain=${bookmark.url}`}
+								alt="icon"
+							/>
+
+							<a href={`${bookmark.url}`}>{bookmark.url}</a>
 						</li>
 					);
 				})}

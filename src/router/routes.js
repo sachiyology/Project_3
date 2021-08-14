@@ -1,30 +1,35 @@
 import React from 'react';
-import App from '../pages/App';
-import About from '../pages/About';
+/* import App from '../pages/App';
+import About from '../pages/About';*/
 import Home from '../pages/Home';
-import Contact from '../pages/Contact';
+import New from '../pages/New';
 
 const routes = [
-	{
-		Component: Contact,
-		key: 'Contact',
-		path: '/contact'
-	},
+	/* {
+		Component: New,
+		key: 'New',
+		path: '/'
+	}, */
 	{
 		Component: Home,
 		key: 'Home',
 		path: '/home'
 	},
 	{
-		Component: About,
-		key: 'About',
-		path: '/about'
-	},
-	{
+		Component: New,
+		key: 'New',
+		path: '/'
+	}
+	/* {
 		Component: App,
 		key: 'App',
 		path: '/'
-	}
+	} */
+	/* {
+	Component: About,
+	key: 'About',
+	path: '/about'
+	} */
 ];
 
 export default routes;

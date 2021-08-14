@@ -57,7 +57,9 @@ export default function Show(props) {
 				<>
 					<h3>{bookmark.title}</h3>
 					<p>{bookmark.url}</p>
-					<button onClick={handleDelete}>DELETE</button>
+					<button onClick={handleDelete} className="btn btn-secondary">
+						Remove
+					</button>
 				</>
 			) : (
 				<h1> Loading...</h1>
@@ -75,8 +77,11 @@ export default function Show(props) {
 					{' '}
 					URL: <input type="text" ref={urlInput} defaultValue={bookmark.url} />
 				</label>
-				<input type="submit" value="Update Bookmark" />
+				<input type="submit" value="Update" className="btn btn-secondary" />
 			</form>
+			<div className="back-link">
+				<a href="/home">Back to Home</a>
+			</div>
 		</div>
 	);
 }

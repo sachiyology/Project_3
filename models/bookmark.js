@@ -10,5 +10,4 @@ const bookmarkSchema = new Schema({
   timestamps: true
 })
 
-
 module.exports = model('Bookmark', bookmarkSchema )
